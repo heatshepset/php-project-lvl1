@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Composer install
-          run: composer install
+      - name: Composer update
+          run: composer update
       - name: phpcs lint
           run: 	composer run-script phpcs -- --standard=PSR12 src bin
