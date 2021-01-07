@@ -1,7 +1,5 @@
 <?php
 
-namespace Brain\Even;
-
 use function cli\line;
 use function cli\prompt;
 
@@ -11,15 +9,18 @@ line("Welcome to the Brain Game!");
 $name = prompt('May I have your name?');
 line('Hello, %s!', $name);
 line('Answer \"yes\" if the number is even, otherwise answer \"no\".');
+
 $countTruAnswers = 0;
+$minRand = 0;
+$maxRand = 100;
 
 while ($countTruAnswers < 3) {
-    $randNumber = getNumber();
+    $randNumber = rand($minRand, $maxRand);
     line('Question: ' . $randNumber);
     $answer = prompt('');
     line('Your answer: ' . $answer);
 
-    if ($randNumber % 2 === 0 ) {
+    if ($randNumber % 2 === 0) {
         if ($answer === 'yes') {
             line('Correct!');
             $countTruAnswers++;
@@ -40,13 +41,4 @@ while ($countTruAnswers < 3) {
 
 if ($countTruAnswers === 3) {
     line("Congratulations, " . $name . "!");
-}
-
-
-function getNumber()
-{
-    $minRand = 0;
-    $maxRand = 100;
-
-    return rand($minRand, $maxRand);
 }
