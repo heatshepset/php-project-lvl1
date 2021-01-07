@@ -1,24 +1,19 @@
 <?php
 
+namespace Brain\Games\Even;
+
 use function cli\line;
 use function cli\prompt;
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
+require_once('src/Engine.php');
 
-line("Welcome to the Brain Game!");
-$name = prompt('May I have your name?');
-line('Hello, %s!', $name);
 line('Answer \"yes\" if the number is even, otherwise answer \"no\".');
 
-$countTruAnswers = 0;
-$minRand = 0;
-$maxRand = 100;
-
-while ($countTruAnswers < 3) {
+while ($countTruAnswers < $stopRound) {
     $randNumber = rand($minRand, $maxRand);
     line('Question: ' . $randNumber);
-    $answer = prompt('');
-    line('Your answer: ' . $answer);
+    $answer = prompt('Your answer');
 
     if ($randNumber % 2 === 0) {
         if ($answer === 'yes') {
@@ -39,6 +34,6 @@ while ($countTruAnswers < 3) {
     }
 }
 
-if ($countTruAnswers === 3) {
+if ($countTruAnswers === $stopRound) {
     line("Congratulations, " . $name . "!");
 }
