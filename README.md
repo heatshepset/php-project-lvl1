@@ -12,3 +12,5 @@
 <p>Brain-calc demo
 <a href="https://asciinema.org/a/bQ4dfMU2F59juCjlVIrxP3cDV">https://asciinema.org/a/bQ4dfMU2F59juCjlVIrxP3cDV</a>
 </p>
+<p>Brain-gcd demo
+<a href="https://asciinema.org/a/jQb9r13wcivRTM5UUumfc6EeO">https://asciinema.org/a/jQb9r13wcivRTM5UUumfc6EeO</a></p>
