@@ -7,6 +7,7 @@ use function cli\prompt;
 
 require __DIR__ . '/../../vendor/autoload.php';
 require_once('src/Engine.php');
+
 line('What is the result of the expression?');
 $mathematicalOperation = ['+', '-', '*'];
 
