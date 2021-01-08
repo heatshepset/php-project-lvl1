@@ -13,5 +13,5 @@ line('Hello, %s!', $name);
 
 $countTruAnswers = 0;
 $stopRound = 3;
-$minRand = 0;
-$maxRand = 60;
+$minRand = 1;
+$maxRand = 100;

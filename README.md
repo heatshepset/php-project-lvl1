@@ -14,3 +14,6 @@
 </p>
 <p>Brain-gcd demo
 <a href="https://asciinema.org/a/jQb9r13wcivRTM5UUumfc6EeO">https://asciinema.org/a/jQb9r13wcivRTM5UUumfc6EeO</a></p>
+<p>Brain-progression demo
+<a href="https://asciinema.org/a/6hzrAI1KyUecKjF5QZPilLWqO">https://asciinema.org/a/6hzrAI1KyUecKjF5QZPilLWqO</a>
+</p>
