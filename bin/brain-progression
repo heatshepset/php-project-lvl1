@@ -1,4 +1,4 @@
 #!/usr/bin/env php
 <?php
 
-require_once("src/Games/Progression.php");
+require_once('src/Games/Progression.php');
