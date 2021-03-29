@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 
 require __DIR__ . '/../../vendor/autoload.php';
-require_once('../Engine.php');
+require dirname(__DIR__) . '/Engine.php';
 
 line("Find the greatest common divisor of given numbers.");
 
