@@ -2,4 +2,4 @@
 
 <?php
 
-require_once('src/Games/Progression.php');
+require_once('../src/Games/Progression.php');

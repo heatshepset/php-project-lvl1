@@ -2,4 +2,4 @@
 
 <?php
 
-require_once('src/Games/Even.php');
+require_once('../src/Games/Even.php');

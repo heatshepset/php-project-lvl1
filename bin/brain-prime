@@ -2,4 +2,4 @@
 
 <?php
 
-require_once('src/Games/Prime.php');
+require_once('../src/Games/Prime.php');
