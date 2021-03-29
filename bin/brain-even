@@ -2,4 +2,4 @@
 
 <?php
 
-require __DIR__ . '/src/Games/Even.php';
+require'../src/Games/Even.php';
