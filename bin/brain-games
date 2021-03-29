@@ -2,4 +2,4 @@
 
 <?php
 
-require __FILE__ . '/src/Cli.php';
+require '/src/Cli.php';
