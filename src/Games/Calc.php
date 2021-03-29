@@ -11,6 +11,10 @@ require dirname(__DIR__) . '/Engine.php';
 line('What is the result of the expression?');
 $mathematicalOperation = ['+', '-', '*'];
 
+$countTruAnswers = 0;
+$stopRound = 3;
+$minRand = 1;
+$maxRand = 100;
 while ($countTruAnswers < $stopRound) {
     $randNumber1 = rand($minRand, $maxRand);
     $randNumber2 = rand($minRand, $maxRand);

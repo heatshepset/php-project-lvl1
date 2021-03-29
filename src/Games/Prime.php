@@ -10,6 +10,10 @@ require dirname(__DIR__) . '/Engine.php';
 
 line('Answer "yes" if given number is prime. Otherwise answer "no".');
 
+$countTruAnswers = 0;
+$stopRound = 3;
+$minRand = 1;
+$maxRand = 100;
 while ($countTruAnswers < $stopRound) {
     $randNumber = rand($minRand, $maxRand);
     line('Question: ' . $randNumber);

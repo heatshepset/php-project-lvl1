@@ -11,7 +11,3 @@ line("Welcome to the Brain Game!");
 $name = prompt('May I have your name?');
 line('Hello, %s!', $name);
 
-$countTruAnswers = 0;
-$stopRound = 3;
-$minRand = 1;
-$maxRand = 100;

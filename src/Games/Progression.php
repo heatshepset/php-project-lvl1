@@ -10,6 +10,10 @@ require dirname(__DIR__) . '/Engine.php';
 
 line("What number is missing in the progression?");
 
+$countTruAnswers = 0;
+$stopRound = 3;
+$minRand = 1;
+$maxRand = 100;
 while ($countTruAnswers < $stopRound) {
     $steps = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     $step = array_rand($steps);
