@@ -22,6 +22,7 @@ while ($countTruAnswers < $stopRound) {
         } else {
             line("'" . $answer . "' is wrong answer ;(. Correct answer was 'yes'.");
             line("Let's try again, " . $name . "!");
+            break;
         }
     } else {
         if ($answer === 'no') {
@@ -30,6 +31,7 @@ while ($countTruAnswers < $stopRound) {
         } else {
             line("'" . $answer . "' is wrong answer ;(. Correct answer was 'no'.");
             line("Let's try again, " . $name . "!");
+            break;
         }
     }
 }

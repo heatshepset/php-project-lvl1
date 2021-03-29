@@ -45,6 +45,7 @@ while ($countTruAnswers < $stopRound) {
     } else {
         line("'" . $answer . "' is wrong answer ;(. Correct answer was '" . $progNumber . "'.");
         line("Let's try again, " . $name . "!");
+        break;
     }
 }
 
