@@ -2,4 +2,4 @@
 
 <?php
 
-require __DIR__ . '../src/Games/Calc.php';
+require __DIR__ . '/src/Games/Calc.php';
