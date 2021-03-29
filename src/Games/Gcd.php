@@ -16,16 +16,22 @@ while ($countTruAnswers < $stopRound) {
     line('Question: ' . $randNumber1 . ' ' . $randNumber2);
     $answer = prompt('Your answer');
 
-    $maxNamber = max($randNumber1, $randNumber2);
-    $lineStop = $maxNamber / 2;
     $gcd = 1;
-    $i = 1;
-    while ($i < $lineStop) {
-        if ($randNumber1 % $i === 0 && $randNumber2 % $i === 0) {
-            $gcd = $i;
+    if ($randNumber1 !== $randNumber2) {
+        $maxNumber = max($randNumber1, $randNumber2);
+        $lineStop = $maxNumber / 2;
+
+        $i = 1;
+        while ($i < $lineStop) {
+            if ($randNumber1 % $i === 0 && $randNumber2 % $i === 0) {
+                $gcd = $i;
+            }
+            $i++;
         }
-        $i++;
+    } else {
+        $gcd = $randNumber1;
     }
+
     if ($gcd === ((int) $answer)) {
         line('Correct!');
         $countTruAnswers++;
