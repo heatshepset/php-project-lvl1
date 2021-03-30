@@ -37,8 +37,8 @@ while ($countTruAnswers < $stopRound) {
         }
         $progressionItog[] = $progressionCut[$i];
     }
-
-    $randKeyProgression = rand(0, count($progressionItog));
+    $randMaxIndex = count($progressionItog) - 1;
+    $randKeyProgression = rand(0, $randMaxIndex);
     $progNumber = $progressionItog[$randKeyProgression];
     $progressionItog[$randKeyProgression] = '..';
     $progressionString = implode(' ', $progressionItog);
