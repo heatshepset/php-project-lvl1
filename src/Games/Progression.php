@@ -26,7 +26,7 @@ while ($countTruAnswers < $stopRound) {
     }
     $lenProgression = count($progression);
     $border = floor(($lenProgression - 1) / 2);
-    $randShift = rand($minRand, $border);
+    $randShift = rand($minRand, (int) $border);
 
     $progressionCut = array_slice($progression, $randShift);
     $lenProgressionCut = count($progressionCut);
