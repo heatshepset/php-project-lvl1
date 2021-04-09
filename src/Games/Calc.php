@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Игра - подсчитай арифметическое выражение
+ */
+
 namespace Brain\Games\Calc;
 
 use function cli\line;
