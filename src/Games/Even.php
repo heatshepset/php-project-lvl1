@@ -1,7 +1,9 @@
 <?php
+
 /**
  * Игра на определение четности числа
  */
+
 namespace Brain\Games\Even;
 
 use function cli\line;
